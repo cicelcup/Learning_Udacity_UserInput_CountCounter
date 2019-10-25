@@ -31,7 +31,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/label_puntuacion_equipo1"
+                android:id="@+id/label_team_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
@@ -42,7 +42,7 @@
                 android:textSize="56sp" />
 
             <Button
-                android:id="@+id/btn_3puntos_equipo1"
+                android:id="@+id/btn_3points_team1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -50,13 +50,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="Incrementar_Puntuacion"
+                android:onClick="increaseScore"
                 android:text="@string/_3_puntos"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
 
             <Button
-                android:id="@+id/btn_2puntos_equipo1"
+                android:id="@+id/btn_2points_team1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -64,13 +64,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="Incrementar_Puntuacion"
+                android:onClick="increaseScore"
                 android:text="@string/_2_puntos"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
 
             <Button
-                android:id="@+id/btn_1punto_equipo1"
+                android:id="@+id/btn_1point_team1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -78,7 +78,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="Incrementar_Puntuacion"
+                android:onClick="increaseScore"
                 android:text="@string/_1_punto"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
@@ -110,7 +110,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/label_puntuacion_equipo2"
+                android:id="@+id/label_team2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
@@ -121,7 +121,7 @@
                 android:textSize="56sp" />
 
             <Button
-                android:id="@+id/btn_3puntos_equipo2"
+                android:id="@+id/btn_3points_team2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -129,13 +129,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="Incrementar_Puntuacion"
+                android:onClick="increaseScore"
                 android:text="@string/_3_puntos"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
 
             <Button
-                android:id="@+id/btn_2puntos_equipo2"
+                android:id="@+id/btn_2points_team2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -143,13 +143,13 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="Incrementar_Puntuacion"
+                android:onClick="increaseScore"
                 android:text="@string/_2_puntos"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
 
             <Button
-                android:id="@+id/btn_1punto_equipo2"
+                android:id="@+id/btn_1point_team2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -157,7 +157,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="Incrementar_Puntuacion"
+                android:onClick="increaseScore"
                 android:text="@string/_1_punto"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
