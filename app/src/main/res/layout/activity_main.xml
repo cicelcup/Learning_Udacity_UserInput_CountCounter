@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,11 +23,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Equipo 1"
+                android:text="@string/equipo_1"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -40,7 +39,7 @@
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
-                android:textSize="56dp" />
+                android:textSize="56sp" />
 
             <Button
                 android:id="@+id/btn_3puntos_equipo1"
@@ -52,7 +51,7 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="Incrementar_Puntuacion"
-                android:text="+3 puntos"
+                android:text="@string/_3_puntos"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
 
@@ -66,7 +65,7 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="Incrementar_Puntuacion"
-                android:text="+2 puntos"
+                android:text="@string/_2_puntos"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
 
@@ -80,7 +79,7 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="Incrementar_Puntuacion"
-                android:text="+1 punto"
+                android:text="@string/_1_punto"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
         </LinearLayout>
@@ -103,11 +102,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Equipo 2"
+                android:text="@string/equipo_2"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -119,7 +118,7 @@
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
-                android:textSize="56dp" />
+                android:textSize="56sp" />
 
             <Button
                 android:id="@+id/btn_3puntos_equipo2"
@@ -131,7 +130,7 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="Incrementar_Puntuacion"
-                android:text="+3 puntos"
+                android:text="@string/_3_puntos"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
 
@@ -145,7 +144,7 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="Incrementar_Puntuacion"
-                android:text="+2 puntos"
+                android:text="@string/_2_puntos"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
 
@@ -159,7 +158,7 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="Incrementar_Puntuacion"
-                android:text="+1 punto"
+                android:text="@string/_1_punto"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white" />
         </LinearLayout>
@@ -173,6 +172,6 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="32dp"
         android:onClick="reset"
-        android:text="Reiniciar"
+        android:text="@string/reiniciar"
         android:textColor="@android:color/white" />
 </RelativeLayout>
