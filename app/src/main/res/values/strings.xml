@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CountCounter</string>
+    <string name="app_name">Counter</string>
     <string name="equipo_1">Equipo 1</string>
     <string name="_3_puntos">+3 puntos</string>
     <string name="_2_puntos">+2 puntos</string>
