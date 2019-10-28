@@ -9,8 +9,10 @@ import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity {
+//    constants for saving the instance
     static final String SCORE_TEAM_1 = "team1";
     static final String SCORE_TEAM_2 = "team2";
+//    score variables
     int scoreTeam1;
     int scoreTeam2;
 
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        check if there's a previous score before the activity is created
         if (savedInstanceState!=null){
             previousScore(savedInstanceState.getInt(SCORE_TEAM_1),
                     savedInstanceState.getInt(SCORE_TEAM_2));
@@ -36,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+//    Set the previous score
     private void previousScore(int scoreTeam1, int scoreTeam2) {
         this.scoreTeam1 = scoreTeam1;
         this.scoreTeam2 = scoreTeam2;
@@ -45,18 +49,23 @@ public class MainActivity extends AppCompatActivity {
                 R.id.label_team2));
     }
 
+//    Set the score to 0
     private void setToZero(){
         previousScore(0, 0);
 
     }
+
+//    Show the score in the text view
     private void showScore(int x, @NotNull TextView y) {
         y.setText(String.format(Locale.getDefault(),"%d",x));
     }
 
+//    reset the view to 0
     public void reset(View view){
         setToZero();
     }
 
+//    increase the score according which button is pressed
     public void increaseScore(@NotNull View view){
         String whichButton = getResources().getResourceEntryName(view.getId());
 
