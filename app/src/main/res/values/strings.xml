@@ -4,6 +4,9 @@
     <string name="_3_puntos">+3 puntos</string>
     <string name="_2_puntos">+2 puntos</string>
     <string name="_1_punto">+1 punto</string>
+    <string name="_3_puntos_land">+3</string>
+    <string name="_2_puntos_land">+2</string>
+    <string name="_1_punto_land">+1</string>
     <string name="equipo_2">Equipo 2</string>
     <string name="reiniciar">Reiniciar</string>
 </resources>

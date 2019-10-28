@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/equipo_1"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                style="@style/text_team" />
+
+            <TextView
+                android:id="@+id/label_team_1"
+                android:layout_margin="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                style="@style/text_score" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_3points_team1"
+                    style="@style/buttonStyle_land"
+                    android:onClick="increaseScore"
+                    android:text="@string/_3_puntos_land" />
+
+                <Button
+                    android:id="@+id/btn_2points_team1"
+                    style="@style/buttonStyle_land"
+                    android:onClick="increaseScore"
+                    android:text="@string/_2_puntos_land" />
+
+                <Button
+                    android:id="@+id/btn_1point_team1"
+                    style="@style/buttonStyle_land"
+                    android:onClick="increaseScore"
+                    android:text="@string/_1_punto_land" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/equipo_2"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                style="@style/text_team" />
+
+            <TextView
+                android:id="@+id/label_team2"
+                android:layout_margin="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                style="@style/text_score" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+                <Button
+                    android:id="@+id/btn_3points_team2"
+                    style="@style/buttonStyle_land"
+                    android:onClick="increaseScore"
+                    android:text="@string/_3_puntos_land" />
+
+                <Button
+                    android:id="@+id/btn_2points_team2"
+                    style="@style/buttonStyle_land"
+                    android:onClick="increaseScore"
+                    android:text="@string/_2_puntos_land" />
+
+                <Button
+                    android:id="@+id/btn_1point_team2"
+                    style="@style/buttonStyle_land"
+                    android:onClick="increaseScore"
+                    android:text="@string/_1_punto_land" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            style="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/reiniciar"
+            android:layout_centerInParent="true"
+            android:onClick="reset"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
