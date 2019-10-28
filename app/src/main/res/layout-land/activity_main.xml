@@ -55,10 +55,7 @@
         </LinearLayout>
 
         <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_margin="8dp"
-            android:background="@color/colorPrimaryDark" />
+            style="@style/Line_style"/>
 
 <!--        team 2 layout-->
         <LinearLayout
