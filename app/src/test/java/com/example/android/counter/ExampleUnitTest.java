@@ -1,4 +1,4 @@
-package com.example.android.countcounter;
+package com.example.android.counter;
 
 import org.junit.Test;
 

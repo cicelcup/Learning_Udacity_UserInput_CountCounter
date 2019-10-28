@@ -1,4 +1,4 @@
-package com.example.android.countcounter;
+package com.example.android.counter;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

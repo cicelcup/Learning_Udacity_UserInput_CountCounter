@@ -1,4 +1,4 @@
-package com.example.android.countcounter;
+package com.example.android.counter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
