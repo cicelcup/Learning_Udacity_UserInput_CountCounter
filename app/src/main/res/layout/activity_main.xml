@@ -19,7 +19,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:text="@string/equipo_1"
+                android:text="@string/team_1"
                 style="@style/text_team" />
 
             <TextView
@@ -30,19 +30,19 @@
                 android:id="@+id/btn_3points_team1"
                 style="@style/buttonStyle"
                 android:onClick="increaseScore"
-                android:text="@string/_3_puntos" />
+                android:text="@string/_3_points" />
 
             <Button
                 android:id="@+id/btn_2points_team1"
                 style="@style/buttonStyle"
                 android:onClick="increaseScore"
-                android:text="@string/_2_puntos" />
+                android:text="@string/_2_points" />
 
             <Button
                 android:id="@+id/btn_1point_team1"
                 style="@style/buttonStyle"
                 android:onClick="increaseScore"
-                android:text="@string/_1_punto" />
+                android:text="@string/_1_point" />
         </LinearLayout>
 
         <View
@@ -58,7 +58,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:text="@string/equipo_2"
+                android:text="@string/team_2"
                 style="@style/text_team" />
 
             <TextView
@@ -69,19 +69,19 @@
                 android:id="@+id/btn_3points_team2"
                 style="@style/buttonStyle"
                 android:onClick="increaseScore"
-                android:text="@string/_3_puntos" />
+                android:text="@string/_3_points" />
 
             <Button
                 android:id="@+id/btn_2points_team2"
                 style="@style/buttonStyle"
                 android:onClick="increaseScore"
-                android:text="@string/_2_puntos" />
+                android:text="@string/_2_points" />
 
             <Button
                 android:id="@+id/btn_1point_team2"
                 style="@style/buttonStyle"
                 android:onClick="increaseScore"
-                android:text="@string/_1_punto" />
+                android:text="@string/_1_point" />
         </LinearLayout>
 
     </LinearLayout>
@@ -94,5 +94,5 @@
         android:layout_margin="32dp"
         android:padding="16dp"
         android:onClick="reset"
-        android:text="@string/reiniciar" />
+        android:text="@string/restart" />
 </RelativeLayout>
