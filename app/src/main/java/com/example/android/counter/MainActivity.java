@@ -9,23 +9,44 @@ import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity {
+    static final String SCORE_TEAM_1 = "team1";
+    static final String SCORE_TEAM_2 = "team2";
     int scoreTeam1;
     int scoreTeam2;
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        // Save the user's current score
+        savedInstanceState.putInt(SCORE_TEAM_1,scoreTeam1);
+        savedInstanceState.putInt(SCORE_TEAM_2, scoreTeam2);
+
+        super.onSaveInstanceState(savedInstanceState);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setToZero();
+        if (savedInstanceState!=null){
+            previousScore(savedInstanceState.getInt(SCORE_TEAM_1),
+                    savedInstanceState.getInt(SCORE_TEAM_2));
+        }
+        else{
+            setToZero();
+        }
+    }
+
+    private void previousScore(int scoreTeam1, int scoreTeam2) {
+        this.scoreTeam1 = scoreTeam1;
+        this.scoreTeam2 = scoreTeam2;
+        showScore(this.scoreTeam1, (TextView) findViewById(
+                R.id.label_team_1));
+        showScore(this.scoreTeam2, (TextView) findViewById(
+                R.id.label_team2));
     }
 
     private void setToZero(){
-        scoreTeam1 = 0;
-        scoreTeam2 = 0;
-        showScore(scoreTeam1, (TextView) findViewById(
-                R.id.label_team_1));
-        showScore(scoreTeam2, (TextView) findViewById(
-                R.id.label_team2));
+        previousScore(0, 0);
 
     }
     private void showScore(int x, @NotNull TextView y) {
