@@ -1,6 +1,8 @@
 package com.example.android.counter;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProviders;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -9,23 +11,23 @@ import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity {
-    //    score variables
-    int scoreTeam1;
-    int scoreTeam2;
+    //    score view model variable
+    ScoreViewModel scoreViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setToZero();
+        scoreViewModel = ViewModelProviders.of(this).get(ScoreViewModel.class);
+        setScores();
 
     }
 
 //    Set the score to 0
-    private void setToZero(){
-        showScore(0, (TextView) findViewById(
+    private void setScores(){
+        showScore(scoreViewModel.scoreTeam1, (TextView) findViewById(
                 R.id.label_team_1));
-        showScore(0, (TextView) findViewById(
+        showScore(scoreViewModel.scoreTeam2, (TextView) findViewById(
                 R.id.label_team2));
     }
 
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
 //    reset the view to 0
     public void reset(View view){
-        setToZero();
+        setScores();
     }
 
 //    increase the score according which button is pressed
@@ -45,28 +47,28 @@ public class MainActivity extends AppCompatActivity {
 
         switch (whichButton){
             case "btn_1point_team1":
-                scoreTeam1 = scoreTeam1 +1;
-                showScore(scoreTeam1, (TextView) findViewById(R.id.label_team_1));
+                scoreViewModel.scoreTeam1 = scoreViewModel.scoreTeam1 +1;
+                showScore(scoreViewModel.scoreTeam1, (TextView) findViewById(R.id.label_team_1));
                 break;
             case "btn_2points_team1":
-                scoreTeam1 = scoreTeam1 +2;
-                showScore(scoreTeam1, (TextView) findViewById(R.id.label_team_1));
+                scoreViewModel.scoreTeam1 = scoreViewModel.scoreTeam1 +2;
+                showScore(scoreViewModel.scoreTeam1, (TextView) findViewById(R.id.label_team_1));
                 break;
             case "btn_3points_team1":
-                scoreTeam1 = scoreTeam1 +3;
-                showScore(scoreTeam1, (TextView) findViewById(R.id.label_team_1));
+                scoreViewModel.scoreTeam1 = scoreViewModel.scoreTeam1 +3;
+                showScore(scoreViewModel.scoreTeam1, (TextView) findViewById(R.id.label_team_1));
                 break;
             case "btn_1point_team2":
-                scoreTeam2 = scoreTeam2 +1;
-                showScore(scoreTeam2, (TextView) findViewById(R.id.label_team2));
+                scoreViewModel.scoreTeam2 = scoreViewModel.scoreTeam2 +1;
+                showScore(scoreViewModel.scoreTeam2, (TextView) findViewById(R.id.label_team2));
                 break;
             case "btn_2points_team2":
-                scoreTeam2 = scoreTeam2 +2;
-                showScore(scoreTeam2, (TextView) findViewById(R.id.label_team2));
+                scoreViewModel.scoreTeam2 = scoreViewModel.scoreTeam2 +2;
+                showScore(scoreViewModel.scoreTeam2, (TextView) findViewById(R.id.label_team2));
                 break;
             case "btn_3points_team2":
-                scoreTeam2 = scoreTeam2 +3;
-                showScore(scoreTeam2, (TextView) findViewById(R.id.label_team2));
+                scoreViewModel.scoreTeam2 = scoreViewModel.scoreTeam2 +3;
+                showScore(scoreViewModel.scoreTeam2, (TextView) findViewById(R.id.label_team2));
                 break;
         }
 
