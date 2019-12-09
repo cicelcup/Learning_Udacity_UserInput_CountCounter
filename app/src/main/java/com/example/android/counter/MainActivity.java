@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    Set the score to 0
+//    Set the score
     private void setScores(){
         showScore(scoreViewModel.scoreTeam1, (TextView) findViewById(
                 R.id.label_team_1));
@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
 //    reset the view to 0
     public void reset(View view){
+        scoreViewModel.scoreTeam1 = 0;
+        scoreViewModel.scoreTeam2 = 0;
         setScores();
     }
 
